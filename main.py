@@ -15,7 +15,7 @@ try:
     df = pd.read_csv(csv_file_path)
 
     # VERIFY AND CORRECT COLUMNS
-    expected_columns = ['Latitude', 'Longitude', 'SensorType']  # Add other necessary columns if needed
+    expected_columns = ['Latitude', 'Longitude', 'SensorType']  
     for col in expected_columns:
         if col not in df.columns:
             raise ValueError(f"Required column '{col}' is missing in the dataset.")
